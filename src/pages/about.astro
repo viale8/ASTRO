@@ -1,6 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
+import Header from '../components/Header.astro';import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "À propos de moi";
 
@@ -39,7 +39,7 @@ const skillColor = "navy";
       </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
     <h1>{pageTitle}</h1>
     <p>Voici quelques faits me concernant :</p>
@@ -61,5 +61,6 @@ const skillColor = "navy";
 
     {goal === 3 ? <p>Mon objectif est de terminer en 3 jours.</p> : <p>Mon objectif n'est pas de 3 jours.</p>}
 
+  <Footer />
   </body>
 </html>
